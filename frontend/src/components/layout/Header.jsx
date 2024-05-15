@@ -19,42 +19,58 @@ function Header() {
 
   return (
     <header className="headerContainer">
-      <div className="container mx-auto flex justify-between items-center">
+      {/* <div className="container mx-auto flex justify-between items-center"> */}
+      <div className="navBar-content">
         <Link to="/">
           <img
             src={logo2wobg}
             alt="Logo"
-            class="w-24 h-24 ml-10 mr-0 mt-4 mb-8 rounded-full shadow-lg"
+            class="w-24 h-24 ml-1 mr-0 mt-1 mb-8 rounded-full shadow-md"
           />
         </Link>
         <Link
           to="/"
-          className="text-2xl font-bold font-serif text-white ml--20"
+          className="text-3xl font-bold font-serif text-slate-300 -ml-10"
         >
           ITTA BALU
         </Link>
         {/* Navigation links for desktop */}
         <nav className="hidden md:flex space-x-4">
-          <Link to="/" className="text-gray-700 hover:text-black-600">
+          <Link
+            to="/"
+            className="text-gray-700 hover:text-white hover:scale-110 hover:shadow-gray-700 "
+          >
             Home
           </Link>
-          <Link to="/products" className="text-gray-700 hover:text-blue-600">
+          <Link
+            to="/products"
+            className="text-gray-700 hover:text-white hover:scale-110 hover:shadow-gray-700"
+          >
             Products
           </Link>
-          <Link to="/contact" className="text-gray-700 hover:text-blue-600">
+          <Link
+            to="/contact"
+            className="text-gray-700 hover:text-white hover:scale-110 hover:shadow-gray-700"
+          >
             Contact Us
           </Link>
-          <Link to="/about" className="text-gray-700 hover:text-blue-600">
+          <Link
+            to="/about"
+            className="text-gray-700 hover:text-white hover:scale-110 hover:shadow-gray-700"
+          >
             About Us
           </Link>
-          <Link to="/cart" className="text-gray-700 hover:text-blue-600">
+          <Link
+            to="/cart"
+            className="text-gray-700 hover:text-white hover:scale-110 hover:shadow-gray-700"
+          >
             Cart
           </Link>
         </nav>
         {/* Search bar, cart, and user actions */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-3">
           {/* Search input box */}
-          <div className="relative">
+          <div className="relative ">
             <input
               type="text"
               placeholder="Search..."
@@ -70,7 +86,7 @@ function Header() {
           {/* <i className="fas fa-shopping-cart text-gray-700 hover:text-blue-600"></i> */}
           <FontAwesomeIcon icon={faShoppingCart} />
           {/* User-related actions */}
-          <Link to="/login" className="text-gray-700 hover:text-blue-600">
+          <Link to="/login" className="text-gray-700 hover:text-white">
             Login
           </Link>
           <Link
